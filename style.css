@@ -33,3 +33,28 @@ button{
 button:hover{
     transform: scale(1.1);
 }
+
+
+summary::before {
+    content: "▶  ";
+    display: inline-block;
+    transition: transform 1 ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #d810b7;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
