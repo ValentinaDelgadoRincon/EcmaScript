@@ -13,4 +13,23 @@ body {
 }
 h1{
     font-family: ornament;
+    text-align: center;
+    padding: 10vh;
+    font-size: 5rem;
+}
+body img{
+    padding: 3vh;
+    box-shadow: 3px 3px 5px #000;
+}
+button{
+    background-color: yellow;
+    padding:2vh;
+    width: 50vw;
+    margin-left: 25vw;
+    font-size: 2rem;
+    box-shadow: 3px 3px 3px #000;
+    transition: transform 2s cubic-bezier(0,1,1,0);
+}
+button:hover{
+    transform: scale(1.1);
 }
