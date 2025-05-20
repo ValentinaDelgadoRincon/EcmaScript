@@ -73,6 +73,20 @@ contenedor{
 p{
     padding: 5vh;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.funcion{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-left: 30%;
+    margin-bottom: 10%;
+    width: 50%;
+    box-shadow: 3px 3px 3px #000;
+}
 @keyframes mover{
     0%{
         transform: translateX(0);
@@ -92,9 +106,5 @@ p{
     button{
         padding: 1vh;
         font-size: 1rem;
-    }
-    a{
-        text-decoration: none;
-        color: black;
     }
 }
