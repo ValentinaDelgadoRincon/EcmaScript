@@ -16,6 +16,9 @@ h1{
     text-align: center;
     padding: 10vh;
     font-size: 5rem;
+    animation-name: mover;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 body img{
     padding: 3vh;
@@ -51,4 +54,47 @@ th {
 }
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+contenedor{
+    display:flex;
+    flex-direction: column;
+}
+
+.ecma,.ecma2,.ecma3,.ecma4{
+    box-shadow: 0px 3px 3px #000;
+    margin: 5vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    margin: 0;
+}
+p{
+    padding: 5vh;
+}
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+@media(max-width:800px){
+    h1{
+        margin-top: 10vh;
+        font-size: 2rem;
+    }
+    button{
+        padding: 1vh;
+        font-size: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
